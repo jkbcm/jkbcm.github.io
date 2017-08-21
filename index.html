@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>github pages test</title>
+	<meta charset="UTF-8">
+
+	<title>github pages test</title>
+	<style>
+				body, html {
+					background: #eee;
+				}
+
+				.thumbnail iframe {
+					width: 1440px;
+					height: 900px;
+				}
+
+				.thumbnail {
+					position: relative;
+					-ms-zoom: 0.45;
+					-moz-transform: scale(0.45);
+					-moz-transform-origin: 0 0;
+					-o-transform: scale(0.45);
+					-o-transform-origin: 0 0;
+					-webkit-transform: scale(0.45);
+					-webkit-transform-origin: 0 0;
+					background: #fff;
+				}
+
+				.thumbnail {
+					position: relative;
+					-ms-zoom: 0.4;
+					-moz-transform: scale(0.4);
+				}
+
+				.thumbnail-container {
+					width: calc(1440px * 0.25);
+					height: calc(900px * 0.25);
+					display: inline-block;
+					overflow: hidden;
+					position: relative;
+					background: #fff;
+				}
+	</style>
 </head>
 
 <body>
-Something ....
+<div class="thumbnail-container">
+  <div class="thumbnail">
+   <iframe src="http://rawgit.com/jkbcm/cm-uclii/master/corpus-oa-uclii-01/10.1111.add.12677/tables/table2/table.svg.html" frameborder="0"></iframe>
+  </div>
+</div>
+<div class="thumbnail-container">
+  <div class="thumbnail">
+   <iframe src="https://rawgit.com/jkbcm/cm-uclii/master/corpus-oa-uclii-01/10.2196.jmir.1963/tables/table2/table.svg.html" frameborder="0"></iframe>
+  </div>
+</div>
+<div class="thumbnail-container">
+  <div class="thumbnail">
+   <iframe src="http://github.com/jkbcm/cm-uclii/corpus-oa-uclii-01/10.1016.j.pec.2005.10.002/tables/table1/table.svg.html" frameborder="0"></iframe>
+  </div>
+</div>
 </body>
 
 </html>
