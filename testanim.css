@@ -1,3 +1,7 @@
+html, body {
+	font-size: 12px;
+}
+
 .before .subtable {
     background-color:#fff;
     color:#000;
@@ -10,6 +14,7 @@
 
 table {
   border-collapse: collapse;
+	font-size: 12px;
 }
 
 .subtable_after {
@@ -50,4 +55,12 @@ table.after tbody.subtable {
 td, th {
   width: 100px;
   padding: 5px;
+}
+
+td.empty {
+	border: none;
+}
+
+td.cell {
+	border: none;
 }
