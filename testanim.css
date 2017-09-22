@@ -1,21 +1,3 @@
-.cloff {
-    background-color:#fff;
-    color:#000;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition:all 1s;
-}
-
-.clon{
-    background-color:#000;
-    color:#fff;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition:all 1s;
-}
-
 .before .subtable {
     background-color:#fff;
     color:#000;
