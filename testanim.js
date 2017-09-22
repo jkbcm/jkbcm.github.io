@@ -6,5 +6,9 @@ $( "button" ).on( "click", function() {
           width: 100
         }, 2000 )
     });
+$( '#table_btn').on('click', function() {
+    $('table').toggleClass('before, after');
+});
+
 });
    
