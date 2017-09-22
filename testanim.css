@@ -12,21 +12,20 @@ html, body {
     transition:all 1s;
 }
 
+.before > tr, 
+.before > th, 
+.before > td,
+.before > tr[data-tblseg="subtabletitle"] th {
+	background-color: #fff;
+	text-align: left;
+	text-decoration: none;
+	border: 1px solid #eee;
+	color: #ddd;
+}
+
 table {
   border-collapse: collapse;
 	font-size: 12px;
-}
-
-.subtable_after {
-    background-color:#bbffbb;
-    color: black;
-    border: 20px solid #eee;
-    border-collapse: separate;
-    border-spacing: 40px;
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -o-transition: all 2s;
-    transition:all 2s;
 }
 
 table.before {
@@ -42,14 +41,18 @@ table.before tbody.subtable {
   color: #000;
 }
 
+table.after thead, 
 table.after tbody.subtable {
-  background: #bbffbb;
-  color: #000;
-  border: 40px solid transparent;
+  border: 40px solid white;
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   -o-transition: all 2s;
   transition:all 2s;
+}
+
+table.after tbody.subtable {
+  background: #bbffbb;
+  color: #000;
 }
 
 td, th {
@@ -64,3 +67,4 @@ td.empty {
 td.cell {
 	border: none;
 }
+
