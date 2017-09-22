@@ -1,0 +1,71 @@
+.cloff {
+    background-color:#fff;
+    color:#000;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
+}
+
+.clon{
+    background-color:#000;
+    color:#fff;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
+}
+
+.before .subtable {
+    background-color:#fff;
+    color:#000;
+    border: 0px solid #eee;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition:all 1s;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.subtable_after {
+    background-color:#bbffbb;
+    color: black;
+    border: 20px solid #eee;
+    border-collapse: separate;
+    border-spacing: 40px;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition:all 2s;
+}
+
+table.before {
+  
+}
+
+table.after {
+ 
+}
+
+table.before tbody.subtable {
+  background: #fff;
+  color: #000;
+}
+
+table.after tbody.subtable {
+  background: #bbffbb;
+  color: #000;
+  border: 40px solid transparent;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition:all 2s;
+}
+
+td, th {
+  width: 100px;
+  padding: 5px;
+}
