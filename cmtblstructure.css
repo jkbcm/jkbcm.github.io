@@ -87,3 +87,7 @@ tbody:not[class="subtable"] th[data-role="obslabel"] {
 	margin-left: -10px;
 }
 
+caption {
+	text-align: left;
+	margin: 15px 5px 20px 5px;
+}
