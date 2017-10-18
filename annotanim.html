@@ -1,136 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style> 
-body {
- position: absolute; 
-}
-div {position: absolute;}
+	<head>
+		<style> 
+				body, div {
+				 position: absolute; 
+				}
 
-/*
-div#annot1 img {
-    opacity: 1;
-    -webkit-animation: annots 5s  linear; 
-    animation: annots 5s  linear;
-}
+				div#annot0 img {
+						opacity: 0;
+						-webkit-animation: annot0_kf 5s forwards linear; 
+						animation: annot0_kf 5s forwards linear;
+				}
 
-div#annot2 img {
-    opacity: 1;
-    -webkit-animation: annots 5s  linear;
-    animation: annots 5s  linear;
-}
-*/
+				div#annot1 img {
+						opacity: 0;
+						-webkit-animation: annot2_kf 5s forwards linear; 
+						animation: annot1_kf 5s forwards linear;
+				}
 
-div#annot0 img {
-    opacity: 0;
-    -webkit-animation: annot0_kf 5s forwards linear; /* Chrome, Safari, Opera */
-    animation: annot0_kf 5s forwards linear;
-}
+				div#annot2 img {
+						opacity: 0;
+						-webkit-animation: annot2_kf 5s forwards linear; 
+						animation: annot2_kf 5s forwards linear;
+				}
 
-div#annot1 img {
-    opacity: 0;
-    -webkit-animation: annot2_kf 5s forwards linear; /* Chrome, Safari, Opera */
-    animation: annot1_kf 5s forwards linear;
-}
+				div#annot3 img {
+						opacity: 0;
+						-webkit-animation: annot3_kf 5s forwards linear; 
+						animation: annot3_kf 5s forwards linear;
+				}
 
-div#annot2 img {
-    opacity: 0;
-    -webkit-animation: annot2_kf 5s forwards linear; /* Chrome, Safari, Opera */
-    animation: annot2_kf 5s forwards linear;
-}
+				div#annot4 img {
+						opacity: 0;
+						-webkit-animation: annot4_kf 5s forwards linear; 
+						animation: annot4_kf 5s forwards linear;
+				}
 
-div#annot3 img {
-    opacity: 0;
-    -webkit-animation: annot3_kf 5s forwards linear; /* Chrome, Safari, Opera */
-    animation: annot3_kf 5s forwards linear;
-}
+				@keyframes annot0_kf {
+					0% { opacity: 1; }
+					25% { opacity: 1; }
+					50% { opacity: 1; }
+					75% { opacity: 1; }
+					100% { opacity: 1; }
+				}
 
-div#annot4 img {
-    opacity: 0;
-    -webkit-animation: annot4_kf 5s forwards linear; /* Chrome, Safari, Opera */
-    animation: annot4_kf 5s forwards linear;
-}
+				@keyframes annot1_kf {
+					0% { opacity: 0; }
+					25% { opacity: 1; }
+					50% { opacity: 1; }
+					75% { opacity: 1; }
+					100% { opacity: 1; }
+				}
 
-/* Chrome, Safari, Opera */
-/*
-@-webkit-keyframes annots {
-    50% {opacity: 0.4;}
-}
-*/
-/* Standard syntax */
-/*
-@keyframes annots {
-     0% {opacity: 0;}
-     100% {opacity:1;}
-}
-*/
-/*
-.annot {
-  opacity: 1;
-}
-*/
+				@keyframes annot2_kf {
+					0% { opacity: 0; }
+					25% { opacity: 0; }
+					50% { opacity: 1; }
+					75% { opacity: 1; }
+					100% { opacity: 1; }
+				}
 
-@keyframes annot0_kf {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  50% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 1; }
-}
+				@keyframes annot3_kf {
+					0% { opacity: 0; }
+					25% { opacity: 0; }
+					50% { opacity: 0; }
+					75% { opacity: 1; }
+					100% { opacity: 1; }
+				}
 
-@keyframes annot1_kf {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  50% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 1; }
-}
+				@keyframes annot4_kf {
+					0% { opacity: 0; }
+					25% { opacity: 0; }
+					50% { opacity: 0; }
+					75% { opacity: 0; }
+					100% { opacity: 1; }
+				}
 
-@keyframes annot2_kf {
-  0% { opacity: 0; }
-  25% { opacity: 0; }
-  50% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 1; }
-}
-
-@keyframes annot3_kf {
-  0% { opacity: 0; }
-  25% { opacity: 0; }
-  50% { opacity: 0; }
-  75% { opacity: 1; }
-  100% { opacity: 1; }
-}
-
-@keyframes annot4_kf {
-  0% { opacity: 0; }
-  25% { opacity: 0; }
-  50% { opacity: 0; }
-  75% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-</style>
-</head>
-<body>
-
-<div class="annot" id="annot4">
-    <img src="table_4_cells.svg" >
-</div>
-<div class="annot" id="annot3">
-    <img src="table_3_subtable.svg" >
-</div>
-<div class="annot" id="annot2">
-    <img src="table_2_columns.svg" >
-</div>
-<div class="annot" id="annot1">
-    <img src="table_1_thbf.svg" >
-</div>
-<div class="annot" id="annot0">
-    <img src="table_0_raw.svg" >
-</div>
-
-
-</body>
+		</style>
+	</head>
+	<body>
+				<div class="annot" id="annot4">
+						<img src="table_4_cells.svg" >
+				</div>
+				<div class="annot" id="annot3">
+						<img src="table_3_subtable.svg" >
+				</div>
+				<div class="annot" id="annot2">
+						<img src="table_2_columns.svg" >
+				</div>
+				<div class="annot" id="annot1">
+						<img src="table_1_thbf.svg" >
+				</div>
+				<div class="annot" id="annot0">
+						<img src="table_0_raw.svg" >
+				</div>
+  </body>
 </html>
 

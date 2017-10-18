@@ -19,7 +19,7 @@ tbody th {
 
 
 td.cell, th {
-	/* border: #eee 1px solid; */
+	border: #eee 1px solid;
 }
 
 td.empty {
@@ -60,8 +60,13 @@ td[data-role="supp-obs"] {
   padding-left: 0;
 }
 
-th[colspan] {
+th[colspan], 
+th[data-startheadercol] {
 	border-bottom: 3px solid black;
+}
+
+th[data-startheadercol] {
+	border-bottom: 3px solid blue;
 }
 
 thead {
