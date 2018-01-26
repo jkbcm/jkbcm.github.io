@@ -2,19 +2,18 @@
 
 body, html {
 	font-family: sans-serif;
-	font-size: 4px;
+	font-size: 10px;
 }
 
 td, th {
-	/* set width here as (100 / columncount)% */
-	width: 150px;
-	min-width: 150px;
+	width: 130px;
+	min-width: 130px;
 	text-align: left;
 }
 
 /* Default colour for row header cells -- only wraps with no allocated role will stay this colour */
 tbody th {
-	color: #aaa;
+	color: black;
 }
 
 
@@ -35,9 +34,13 @@ th[data-role="obslabel"] {
 
 td[data-role="supp-obs"] {
 	color: blue;
-	background: #dd2;
+	background: #ff2;
 }
 
+.subtable td[data-role="supp-obs"] {
+	color: blue;
+	background: #cf4;
+}
 
 /* Semantic markup for transformed structures */
 
@@ -56,21 +59,19 @@ td[data-role="supp-obs"] {
 
 .subtable tr[data-role="obs"] {
 	color: purple;
-	/* border: dashed 1px black; */
-  padding-left: 0;
+	border: dashed 1px black; padding-left: 0;
 }
 
-th[colspan], 
-th[data-startheadercol] {
+th[colspan] {
 	border-bottom: 3px solid black;
 }
 
-th[data-startheadercol] {
-	border-bottom: 3px solid blue;
+tr[data-tblrole="columnheaderrow"] th {
+	color: black;
 }
 
 thead {
-	border-bottom: 4px solid white;
+	border-bottom: 4px solid red;
 }
 
 /* Subtable title is not indented, highlighted red */
@@ -93,6 +94,9 @@ tbody:not[class="subtable"] th[data-role="obslabel"] {
 }
 
 caption {
-	text-align: left;
-	margin: 15px 5px 20px 5px;
+	margin: 15px 0 25px 0;
+}
+
+tfoot tr td {
+	padding: 20px 0 0 0;
 }
