@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+			  <meta charset="utf-8"/>
+        <title>ContentMine annotated article browser</title>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="linktargettoiframe.js"></script>
+				<link href='https://fonts.googleapis.com/css?family=Allerta:400,400italic,700,700italic|Roboto' rel='stylesheet' type='text/css'>
+				<style>
+					body, html {
+						font-family: "Roboto", Arial, sans-serif;
+						font-weight: 400;
+						background: #444;
+						font-size: 16px;
+						overflow-x: hidden;
+						overflow-y: hidden;
+						padding: 0;
+						margin: 0;
+					}
+
+					p {
+						margin: 10px auto;
+					}
+
+					#result {
+						margin: 20px auto;
+						background: white;
+					}
+
+					a {
+						background: yellow;
+					}
+
+					.disease {
+						background: #ffaaff;
+					}
+
+					#nav {
+						display: block;
+						height: 80px;
+						width: 100%;
+						background: #0044aa;
+						color: #fff;
+						padding-left: 10px;
+					}
+
+					#pagetitlebar {
+						display: block;
+						height: 50px;
+						width: 100%;
+						background: #0099aa;
+						color: #fff;
+						margin: 0;
+						padding: 0 10px;
+					}
+
+					#pagetitlebar h2 {
+						font-family: "Allerta", Arial, sans-serif;
+						font-size: 22px;
+						margin: 0;
+						padding: 8px 0 3px 0;
+					}
+
+					#pagebody {
+						display: block;
+						padding: 0 15px;
+						overflow: hidden;
+					}
+
+					#panes {
+						width: 65%;
+						float: right;
+					}
+
+				  #articletext {
+						background: white;
+						margin: 20px 5px;
+						padding: 10px 5px;
+						max-height: 300px;
+						width: 99%;
+						overflow-y: scroll;
+						overflow-x: hidden;	
+					}
+
+					iframe {
+						background: #fff;
+						display: block;
+						margin: 20px 5px;
+						width: 100%;
+						height: 200px;
+						scroll-y: auto;
+						border: none;
+					}
+
+					h2 {
+						font-size: 15px;
+						text-align: 
+					}
+
+					p {
+						font-size: 12px;
+					}
+					
+					.cmlogo {
+						width: 80px;
+						margin: 15px 0px 10px 0px;
+					}
+				</style>
+				<style type="text/css">
+						span {border-style: solid;border-width: 1; border-color:blue; background-color:yellow;}
+						.patients {border-color:red;background-color:cyan; }
+						.drug {background-color:pink;}
+						.disease {background-color:#ffaaff;}
+						.adverse {background-color:#99ff99;}
+				</style>
+    </head>
+    <body>
+			<div id="nav"><img class="cmlogo" src="ContentMine_logo_white_with_wordmark.svg"></div><div id="pagetitlebar">
+				<h2>Article browser</h2>
+			</div>
+				<div id="pagebody">
+				<div id="panes">
+			    <div id="articletext">
+<div>
+<h2>Background</h2>
+
+<p>Many patients with severe <a target="_blank" href="https://www.wikidata.org/wiki/Q35869" title="Q35869">asthma</a> require regular treatment with oral <a target="_blank" href="https://www.wikidata.org/wiki/Q422549" title="Q422549" class="drug">glucocorticoids</a>
+despite the use of high-dose inhaled therapy.</p>
+
+<p> However, the regular use of
+systemic glucocorticoids can result in serious and often irreversible <a target="_blank" class="adverse" href="https://www.wikidata.org/wiki/Q2047938" title="Q2047938">adverse effects</a>.</p>
+
+<a target="_blank" href="https://www.wikidata.org/wiki/Q3306175" title="Q3306175"><p>Mepolizumab</a>, a humanized monoclonal <a target="_blank" href="https://www.wikidata.org/wiki/Q5939625" title="Q5939625">antibody</a> that binds to and inactivates
+<a target="_blank" href="https://www.wikidata.org/wiki/Q14877650" title="Q14877650">interleukin-5</a>, has been shown to reduce asthma <a target="_blank" href="https://www.wikidata.org/wiki/Q1383410" title="Q1383410">exacerbations</a> in patients with
+severe <a target="_blank" href="https://www.wikidata.org/wiki/Q30313988" title="Q30313988">eosinophilic</a> asthma.</p>
+
+</div>
+
+<div>
+<h2>Methods</h2>
+
+<p>In a randomized, double-blind <a target="_blank" href="https://www.wikidata.org/wiki/Q1436668" title="Q1436668">trial</a> involving <span class="patients">135 patients</span> with severe eosinophilic
+asthma, we compared the glucocorticoid-sparing effect of mepolizumab (at <span class="">a dose of
+100 mg</span>) with that of <a target="_blank" href="https://www.wikidata.org/wiki/Q269829" title="Q269829">placebo</a> administered <a target="_blank" href="https://www.wikidata.org/wiki/Q18230682" title="Q18230682">subcutaneously</a> every 4 weeks for 20 weeks.</p>
+
+<p>The primary outcome was the degree of <span class="">reduction</span> in the glucocorticoid dose <span class="">(90 to
+100% reduction, 75 to less than 90% reduction, 50 to less than 75% reduction, more
+than 0 to less than 50% reduction, or no decrease in oral glucocorticoid dose, a lack
+of asthma control during weeks 20 to 24, or withdrawal from treatment)</span>.</p>
+
+<p> Other
+outcomes included the rate of asthma <span class="">exacerbations</a>, <span class="">asthma control</span>, and <span class="">safety</span>.</p>
+
+</div>
+<div>
+<h2>Results</h2>
+
+<p>The <span class="">likelihood</span> of a <span class="">reduction</span> in the glucocorticoid-dose stratum <span class="">was 2.39 times
+greater</span> in the <span class="">mepolizumab group</span> than in the <span class="">placebo group</span> <span class="">(95% confidence interval,
+1.25 to 4.56; P = 0.008)</span>.</p>
+
+<p> The <span class="">median percentage</span> reduction from <span class="">baseline</span> in
+the <span class="">glucocorticoid dose</span> was <span class="">50% in the mepolizumab group</span>, as compared with <span class="">no
+reduction in the placebo group</span> <span class="">(P = 0.007)</span>.</p>
+
+<p> Despite receiving a <span class="">reduced glucocorticoid
+dose</span>, <span class="">patients in the mepolizumab group</span>, as compared with those in the <span class="">placebo
+group</span>, had a <span class="">relative reduction of 32% in the annualized rate of exacerbations</span>
+<span class="">(1.44 vs. 2.12, P = 0.04)</span> and a reduction of 0.52 points with respect to asthma symptoms
+<span class="">(P = 0.004)</span>, as measured on the Asthma Control Questionnaire <a target="_blank" href="https://www.wikidata.org/wiki/Q39815114" title="Q39815114">5</a> (in which the
+minimal clinically important difference is <span class="">0.5 points</span>).</p>
+
+<p> The <span class="">safety profile</span> of mepolizumab
+was similar to that of placebo.</p>
+
+</div>
+
+<div>
+<h2>Conclusions</h2>
+
+<p>In patients requiring daily oral glucocorticoid therapy to maintain asthma control,
+mepolizumab had a <span class="">significant</span> glucocorticoid-sparing effect, reduced exacerbations,
+and <span class="">improved</span> control of asthma symptoms.</p>
+
+<p> (<span class="">Funded by <a target="_blank" href="https://www.wikidata.org/wiki/Q212322" title="Q212322">GlaxoSmithKline</a></span>;
+<span class="">SIRIUS ClinicalTrials.gov number, NCT01691508 ( https://clinicaltrials.gov/ct2/show/NCT01691508)</span>.)</p>
+				</div>
+			</div><!-- end of #articletext -->
+			<iframe id="wikidataframe"></iframe>
+		  </div><!-- end of #panes -->
+		 </div><!-- end of #pagebody -->
+    </body>
+</html>
